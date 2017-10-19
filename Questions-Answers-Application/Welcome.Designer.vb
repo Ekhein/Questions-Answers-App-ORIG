@@ -24,9 +24,9 @@ Partial Class Welcome
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.LoadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.dgbQuestions = New System.Windows.Forms.DataGridView()
+        Me.dgvQuestions = New System.Windows.Forms.DataGridView()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.dgbQuestions, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvQuestions, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -44,17 +44,17 @@ Partial Class Welcome
         Me.LoadToolStripMenuItem.Size = New System.Drawing.Size(45, 20)
         Me.LoadToolStripMenuItem.Text = "Load"
         '
-        'dgbQuestions
+        'dgvQuestions
         '
-        Me.dgbQuestions.AllowUserToAddRows = False
-        Me.dgbQuestions.AllowUserToDeleteRows = False
-        Me.dgbQuestions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgbQuestions.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgbQuestions.Location = New System.Drawing.Point(0, 24)
-        Me.dgbQuestions.Name = "dgbQuestions"
-        Me.dgbQuestions.ReadOnly = True
-        Me.dgbQuestions.Size = New System.Drawing.Size(1251, 744)
-        Me.dgbQuestions.TabIndex = 1
+        Me.dgvQuestions.AllowUserToAddRows = False
+        Me.dgvQuestions.AllowUserToDeleteRows = False
+        Me.dgvQuestions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvQuestions.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvQuestions.Location = New System.Drawing.Point(0, 24)
+        Me.dgvQuestions.Name = "dgvQuestions"
+        Me.dgvQuestions.ReadOnly = True
+        Me.dgvQuestions.Size = New System.Drawing.Size(1251, 744)
+        Me.dgvQuestions.TabIndex = 1
         '
         'Welcome
         '
@@ -62,14 +62,14 @@ Partial Class Welcome
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1251, 768)
-        Me.Controls.Add(Me.dgbQuestions)
+        Me.Controls.Add(Me.dgvQuestions)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Welcome"
         Me.Text = "Welcome"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.dgbQuestions, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvQuestions, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -77,5 +77,5 @@ Partial Class Welcome
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents LoadToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents dgbQuestions As DataGridView
+    Friend WithEvents dgvQuestions As DataGridView
 End Class
